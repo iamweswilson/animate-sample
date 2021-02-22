@@ -1,6 +1,15 @@
 <template>
-  <div class="container text-center mx-auto p-24">
-      <canvas id="sake-spin"></canvas>
+  <div class="container mx-auto p-24 max-w-4xl">
+      <h1 class="text-5xl">Sake for the elite</h1>
+      <p>Tired of drinking the same sake normies drink? Of course you are, we all are. Your lips deserve sake that only the richest of the rich can drink. This is your lucky day.</p> 
+      <p>Welcome to sake refined.</p>
+      <canvas id="sake-spin" class="mt-20"></canvas>
+      <p>
+        That's right, this stuff is made of gold... well, it's actually made of rice, but it's as good as gold! Well, if gold were edible.
+      </p>
+      <p>
+        You get the point
+      </p>
   </div>
 </template>
 
@@ -59,13 +68,19 @@ body {
   background: #000;
   height: 500vh;
 }
+h1 {
+  color: white;
+}
+p {
+  color: white;
+  margin: 1rem 0;
+}
 canvas {
-  position: fixed;
+  /* position: fixed;
   left: 50%;
-  top: 50%;
+  top: 50%; */
   max-height: 100vh;
   max-width: 100vw;
-  transform: translate(-50%, -50%);
-  background: white;
+  /* transform: translate(-50%, -50%); */
 }
 </style>
