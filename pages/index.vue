@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center mx-auto p-24">
-      <canvas id="hero-lightpass"></canvas>
+      <canvas id="sake-spin"></canvas>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   mounted() {
     const html = document.documentElement;
-    const canvas = document.getElementById("hero-lightpass");
+    const canvas = document.getElementById("sake-spin");
     const context = canvas.getContext("2d");
 
     const frameCount = 38;
@@ -36,7 +36,7 @@ export default {
       context.drawImage(img, 0, 0);
     }
 
-    window.addEventListener('scroll', () => {  
+    window.addEventListener('scroll', () => {
       const scrollTop = html.scrollTop;
       const maxScrollTop = html.scrollHeight - window.innerHeight;
       const scrollFraction = scrollTop / maxScrollTop;
