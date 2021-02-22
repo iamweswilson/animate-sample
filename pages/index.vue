@@ -51,7 +51,7 @@ export default {
 }
 </script>
 
-<style <style lang="scss">
+<style lang="scss">
 html {
   height: 100vh;
 }
